@@ -5,14 +5,35 @@ div {
   box-sizing: border-box; 
 }   
 
-@media (min-width: 768px) {
+@media (min-width: 481px) {
   /* I can contain the divs */
   section {
-    width: 960px;
+    width: 768px;
   }
   
   div {
-    float: left;
-    width: 768px;
+    background-color: blue;
+    
   }
+}
+
+@media (min-width: 960px) {
+  /* I can contain the divs */
+  section {
+    width: 960px;
+    margin: 0px auto;
+  }
+
+ div {
+   
+  background-color: pink;
+}
+ }
+
+
+
+
+  
+  
+  
 }

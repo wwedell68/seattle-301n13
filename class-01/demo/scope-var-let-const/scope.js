@@ -1,15 +1,15 @@
 //Used to demonstrate scope for var, let, and const.
 
 //var
-var a = 1
+var a = 1;
 
-function changeVar() {
-  a = 5;
-  return a;
-}
+// function changeVar() {
+//   a = 5;
+//   return a;
+// }
 
 console.log('before change a = ', a);
-changeVar();
+// changeVar();
 console.log('after change a = ', a);
 
 // let
@@ -19,7 +19,7 @@ function changeLet() {
 
   for (let i = 0; i < a; i++) {
     a -= i;
-    console.log(a)
+    console.log(a);
     return a;
   }
 }
@@ -30,25 +30,37 @@ console.log('outside a = ', a);
 
 // const
 
-let x = 99
+const x = 99
 let y = 100
+
+console.log(x, y)
+
+// x = y;
+
+console.log(x);
+
 
 // What happens when I change to const?
 
-function changeConst() {
-  y -= x;
-  return y;
-}
+// function changeConst() {
+//   y -= x;
+//   return y;
+// }
 
-console.log('before change y = ', y);
-changeConst();
-console.log('after change y = ', y);
+// console.log('before change y = ', y);
+// changeConst();
+// console.log('after change y = ', y);
 
 const array = [1, 2, 3]
 let newArray = [4, 5, 6]
 
+console.log(array, newArray)
+
 // I can not change the assignment to array
-// array = newArray
+// newArray = array
+
+console.log(array, newArray)
+
 
 // I can change the contents of the array.
 function changeConst2() {

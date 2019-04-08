@@ -1,20 +1,20 @@
 'use strict';
 
-var names = ['bag', 'banana', 'bathroom', 'boots', 'breakfast', 'bubblegum', 'chair', 'cthulhu', 'dog-duck', 'dragon', 'pen', 'pet-sweep', 'scissors', 'shark', 'sweep', 'tauntaun', 'unicorn', 'usb', 'water-can', 'wine-glass'];
+const names = ['bag', 'banana', 'bathroom', 'boots', 'breakfast', 'bubblegum', 'chair', 'cthulhu', 'dog-duck', 'dragon', 'pen', 'pet-sweep', 'scissors', 'shark', 'sweep', 'tauntaun', 'unicorn', 'usb', 'water-can', 'wine-glass'];
 
-var leftImage = document.getElementById('left');
-var centerImage = document.getElementById('center');
-var rightImage = document.getElementById('right');
+const leftImage = document.getElementById('left');
+const centerImage = document.getElementById('center');
+const rightImage = document.getElementById('right');
 
-var allProducts = [];
-var container = document.getElementById('image_container');
-var viewed = [];
-var labels = [];
-var pics = [leftImage, centerImage, rightImage];
-var list = document.getElementById('productlist');
-var totalClicks = 0;
-var views = [];
-var votes = [];
+const allProducts = [];
+const container = document.getElementById('image_container');
+const viewed = [];
+const labels = [];
+const pics = [leftImage, centerImage, rightImage];
+const list = document.getElementById('productlist');
+const totalClicks = 0;
+const views = [];
+const votes = [];
 
 function Product(name) {
   this.name = name;
@@ -36,7 +36,7 @@ function displayPics(){
     }
   }
   console.log(rando);
-  // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the variable declaration from `var to `let`.
+  // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the variable declaration from `var to `const`.  I didn't have any errors with let. But with const i had an error saying totalClicks and allProducts say no-const-assign.
   // PUT YOUR RESPONSE IN THIS COMMENT
   console.log(viewed);
 
